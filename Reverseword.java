@@ -32,14 +32,15 @@ public class Reverseword {
             char temp = str[l];
             str[l] = str[r];
             str[r] = temp;
-            l++; r--;
+            l++;
+            r--;
         }
     }
 
    public static void main(String[] args) {
-    Reverseword rw = new Reverseword();
-    System.out.println("Input: " + args[0]);
-    System.out.println("Output: " + rw.reverseWords(args[0]));
+       Reverseword rw = new Reverseword();
+       System.out.println("Input: " + args[0]);
+       System.out.println("Output: " + rw.reverseWords(args[0]));
    }
 }
 
