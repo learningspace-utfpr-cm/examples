@@ -11,6 +11,11 @@ public class Reverseword {
 
     char delimiter;
 
+    Reverseword() 
+    {
+        this(' ');
+    }
+
     Reverseword(char delimiter) 
     {
         this.setDelimiter(delimiter);
@@ -55,9 +60,9 @@ public class Reverseword {
     }
 
    public static void main(String[] args) {
-    Reverseword rw = new Reverseword('*');
-    System.out.println("Input: " + args[0]);
-    System.out.println("Output: " + rw.reverseWords(args[0]));
+    Reverseword rw = new Reverseword();
+    // System.out.println("Input: " + args[0]);
+    // System.out.println("Output: " + rw.reverseWords(args[0]));
    }
 }
 
