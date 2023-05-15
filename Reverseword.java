@@ -61,8 +61,8 @@ public class Reverseword {
 
    public static void main(String[] args) {
     Reverseword rw = new Reverseword();
-    // System.out.println("Input: " + args[0]);
-    // System.out.println("Output: " + rw.reverseWords(args[0]));
+    System.out.println("Input: " + args[0]);
+    System.out.println("Output: " + rw.reverseWords(args[0]));
    }
 }
 
