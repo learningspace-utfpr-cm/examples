@@ -11,9 +11,11 @@ public class Reverseword {
 
     char delimiter;
 
+    public static final char DEFAULT_DELIMITER = ' ';
+
     Reverseword() 
     {
-        this(' ');
+        this(DEFAULT_DELIMITER);
     }
 
     Reverseword(char delimiter) 
