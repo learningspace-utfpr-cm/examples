@@ -40,11 +40,11 @@ public class Reverseword {
         {
             if(str[j] == this.getDelimiter())
             {
-                reverse(str, i, j-1);
+                reverse(str, i, j - 1);
                 i = j+1; 
             }
         }
-        reverse(str, i, str.length-1);
+        reverse(str, i, str.length - 1);
         return new String(str);        
     }
     
