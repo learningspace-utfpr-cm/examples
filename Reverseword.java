@@ -13,7 +13,7 @@ public class Reverseword {
         char [] str = s.toCharArray();
         int i = 0;
         
-        for(int j=0; j <= str.length; j++)
+        for(int j=0; j < str.length; j++)
         {
             if(str[j] == ' ')
             {
