@@ -15,7 +15,7 @@ public class Reverseword {
         
         for(int j=0; j < str.length; j++)
         {
-            if(str[j] == '\n')
+            if(str[j] == ' ')
             {
                 reverse(str, i, j-1);
                 i = j+1; 
