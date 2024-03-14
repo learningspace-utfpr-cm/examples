@@ -8,21 +8,22 @@
  * Output: "s'teL ekat edoCteeL tsetnoc"
  */
 public class Reverseword {
-    public String reverseWords(String s) 
+    public String reverseWords(String s, String delimiter) 
     {       
         char [] str = s.toCharArray();
         int i = 0;
         
-        for(int j=0; j <= str.length; j++)
+        for(int j=0; j < str.length; j++)
         {
-            if(str[j] == ' ')
+            if(str[j] == delimiter.charAt(0))
             {
+                System.out.println(delimiter.charAt(0));
                 reverse(str, i, j-1);
                 i = j+1; 
             }
         }
         reverse(str, i, str.length-1);
-        return new String(str);        
+        return new String(str);
     }
     
     public void reverse(char [] str, int l, int r)
@@ -38,8 +39,13 @@ public class Reverseword {
 
    public static void main(String[] args) {
     Reverseword rw = new Reverseword();
-    System.out.println("Input: " + args[1]);
-    System.out.println("Output: " + rw.reverseWords(args[0]));
+    String delimiter = " ";
+    if (args.length >= 2) {
+        delimiter = args[1];
+    }
+    String result = rw.reverseWords(args[0], delimiter);
+    System.out.println("Input: " + args[0]);
+    System.out.println("Output: " + result);
    }
 }
 
