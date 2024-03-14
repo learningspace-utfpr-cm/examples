@@ -42,4 +42,3 @@ public class Reverseword {
     System.out.println("Output: " + rw.reverseWords(args[0]));
    }
 }
-
